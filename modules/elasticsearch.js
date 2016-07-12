@@ -34,10 +34,6 @@ var indexExists = function() {
 
 
 var createDocument = function(doc) {
-   var doc = {
-    title:'titulo',
-    content:'Elias Junior'
-   }
     return client.index({
         index: index,
         type: "documents",

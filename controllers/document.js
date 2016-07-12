@@ -3,7 +3,7 @@ var elastic = require('../modules/elasticsearch');
 var docAction = {
 	create: function(req, res) {
 		console.log(req.body);
-		elastic.createDocument()
+		elastic.createDocument(req.body)
 			.then(function(success) {
 				res.json({
 					status: 'success',
